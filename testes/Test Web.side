@@ -1,0 +1,255 @@
+{
+  "id": "1e29c171-f18f-40a0-a1ac-a5848b59e00c",
+  "version": "2.0",
+  "name": "Test Web",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "40ef16cb-ba56-452e-9c67-c24b2656bc83",
+    "name": "login-sucesso",
+    "commands": [{
+      "id": "9e397d22-cabf-40fc-ba7b-71c2e584d070",
+      "comment": "",
+      "command": "open",
+      "target": "/testes/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebc93fb4-5fd1-4e45-b287-664a1249def6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "462x560",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7d577bb-1b0c-4e1c-8682-607a2d3c9faf",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "6ebb8bbc-588f-4ec9-a32f-34c78a23db68",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "123321"
+    }, {
+      "id": "645b344f-7407-4fb8-9467-97dd05e23e7f",
+      "comment": "",
+      "command": "click",
+      "target": "name=ok",
+      "targets": [
+        ["name=ok", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='ok']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a391f640-bb2b-4464-b4e8-38b540cec077",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1e7b0d6-95e4-4716-b7a7-9c221480f463",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//span[@id='username']", "xpath:attributes"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ze')]", "xpath:innerText"]
+      ],
+      "value": "ze"
+    }, {
+      "id": "06d16a6d-bde9-4d90-be14-aa1795256084",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ae550853-8a18-4a63-bb62-a937e184d60a",
+    "name": "login-falha-senha",
+    "commands": [{
+      "id": "0bd3b872-c246-42a8-ab26-ada1d1b18731",
+      "comment": "",
+      "command": "open",
+      "target": "/testes/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa60efba-366c-4499-aeca-ea9fafd501e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "462x560",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb472366-33e4-47b4-9812-73231b0f3da1",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "59564b13-33a5-42b9-b7ba-020a7a25a91f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "123325"
+    }, {
+      "id": "7653aea1-e35c-41b5-bfda-9d17d2c39acd",
+      "comment": "",
+      "command": "click",
+      "target": "name=ok",
+      "targets": [
+        ["name=ok", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='ok']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4314ed98-ece7-48cc-9643-cf5289fc5499",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css:finder"],
+        ["xpath=//h2[@id='error']", "xpath:attributes"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Usuário ou senha incorretos.')]", "xpath:innerText"]
+      ],
+      "value": "Usuário ou senha incorretos."
+    }, {
+      "id": "dbad19c9-4c17-45d0-ac83-87f4db19b423",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a8041b11-b790-42af-85a2-761de21087e1",
+    "name": "login-falha-usuario",
+    "commands": [{
+      "id": "ebe01834-1927-473d-a0a5-a2173cb6c59e",
+      "comment": "",
+      "command": "open",
+      "target": "/testes/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3373ccfb-dbea-41de-9ba0-b687a670bf03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "462x560",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8fe5a0f-2aa4-4e81-9791-8fe44722cd07",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adm"
+    }, {
+      "id": "3a0bf69f-494c-4b6e-a165-90542f0c0076",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "123321"
+    }, {
+      "id": "58793c8f-49b5-4ec6-bb23-f2eb281eccfe",
+      "comment": "",
+      "command": "click",
+      "target": "name=ok",
+      "targets": [
+        ["name=ok", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='ok']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a82b770-0693-47f0-9ec2-349fb26cd432",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css:finder"],
+        ["xpath=//h2[@id='error']", "xpath:attributes"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Usuário ou senha incorretos.')]", "xpath:innerText"]
+      ],
+      "value": "Usuário ou senha incorretos."
+    }, {
+      "id": "d62de0a9-d810-440e-9907-fbfa8419ea69",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ab759e6-ed01-46e0-ab73-a67c5113c628",
+    "name": "Login Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["40ef16cb-ba56-452e-9c67-c24b2656bc83", "a8041b11-b790-42af-85a2-761de21087e1", "ae550853-8a18-4a63-bb62-a937e184d60a"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
